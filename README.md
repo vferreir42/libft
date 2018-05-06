@@ -3,7 +3,7 @@
 Premier projet de l'ecole 42 : coder une librairie libft.a à l'identique pour les fonctions de la premiere partie et en suivant les recommendations dans la seconde partie.
 
 
-#Partie 1
+# Partie 1
 Consulter le man pour la description des fonctions suivantes :
 
 ft_memset
@@ -36,7 +36,7 @@ ft_toupper
 ft_tolower
 
 
-#Partie 2
+# Partie 2
 ft_memalloc
 Alloue avec malloc(3) et retourne une zone de memoire "fraiche". La memoire allouee est intialisee a 0. Si l'allocation echoue, la fonction renvoie NULL.
 
