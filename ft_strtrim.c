@@ -36,7 +36,7 @@ static int		sizestr(char const *str)
 	return (count);
 }
 
-char			*ft_strtrim(char const *s)
+char			*ft_strtrim(char *s)
 {
 	int		i;
 	int		t;
@@ -46,7 +46,6 @@ char			*ft_strtrim(char const *s)
 
 	if (s == NULL)
 		return (NULL);
-	cast = (char *)s;
 	if (!(new = (char *)malloc(sizeof(char) * (sizestr(s) + 1))))
 		return (0);
 	t = 0;
@@ -59,5 +58,6 @@ char			*ft_strtrim(char const *s)
 	while (t < len)
 		new[i++] = s[t++];
 	new[i] = '\0';
+	ft_strdel(&s);
 	return (new);
 }
